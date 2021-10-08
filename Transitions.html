@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #box {
+            background-color: tomato;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: all;
+            /* transition-property: background-color; */
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            /* transition-delay: 2s; */
+
+
+        }
+
+        #box:hover {
+            background-color: green;
+            height: 300px;
+            width: 300px;
+            border-radius: 70px;
+            font-size: 35px;
+            opacity: 2;
+            font-weight: bolder;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box">
+            LAV RAI
+        </div>
+
+    </div>
+
+</body>
+
+</html>
